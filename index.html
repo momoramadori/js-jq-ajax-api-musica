@@ -2,12 +2,42 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dischi Musicali</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a41fcd4d62.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     </head>
     <body>
+        <header>
+            <div class="logo">
+                <i class="fas fa-compact-disc"></i>
+                <p>Momo's Player</p>
+            </div>
+            <div class="">
+                <label for="generi">Choose a genre</label>
+                <select id="generi">
+                    <option value="All">All</option>
+                  <option value="Pop">Pop</option>
+                  <option value="Jazz">Jazz</option>
+                  <option value="Metal">Metal</option>
+                  <option value="Rock">Rock</option>
+                </select>
+            </div>
+        </header>
+        <main>
+
+        </main>
+        <script id="template" type="text/x-handlebars-template">
+            <div class="cd active {{genre}}">
+                <img src="{{src}}" alt="">
+                <h3>{{title}}</h3>
+                <span class="author">{{author}}</span>
+                <span class="year">{{year}}</span>
+            </div>
+        </script>
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
