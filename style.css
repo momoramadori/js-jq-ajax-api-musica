@@ -7,7 +7,7 @@
 }
 
 header {
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -39,8 +39,8 @@ header select {
 }
 
 main {
-    margin-top: 100px;
-    height: calc(100vh - 100px);
+    margin-top: 80px;
+    height: calc(100vh - 80px);
     background: rgba(0,0,0,1);
     background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(179,44,27,1) 54%, rgba(209,52,52,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(54%, rgba(179,44,27,1)), color-stop(100%, rgba(209,52,52,1)));

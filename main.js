@@ -20,7 +20,7 @@ $.ajax({
                 $('.cd').removeClass('active');
                 $('#generi option:selected').each(function(){
                     var genere = $(this).attr('value');
-                    $('.cd.'+genere).addClass('active');
+                    $('.cd[value ='+genere+']').addClass('active');
                     if($(this).text() == 'All') {
                         $('.cd').addClass('active')
                     }

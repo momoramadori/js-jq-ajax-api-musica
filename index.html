@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='shortcut icon' type='image/x-icon' href='img/music.ico' />
         <title>Dischi Musicali</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -31,7 +32,7 @@
 
         </main>
         <script id="template" type="text/x-handlebars-template">
-            <div class="cd active {{genre}}">
+            <div class="cd active" value="{{genre}}">
                 <img src="{{src}}" alt="">
                 <h3>{{title}}</h3>
                 <span class="author">{{author}}</span>
