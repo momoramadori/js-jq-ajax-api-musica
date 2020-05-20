@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+}
+
+header, header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header i {
+    color: rgba(179,44,27,1);
+    font-size: 30px;
+    margin-right: 10px;
+}
+header p {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+header label {
+    margin-right: 10px;
+}
+
+header select {
+    color: rgba(179,44,27,1);
+}
+
+main {
+    margin-top: 100px;
+    height: calc(100vh - 100px);
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(179,44,27,1) 54%, rgba(209,52,52,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(54%, rgba(179,44,27,1)), color-stop(100%, rgba(209,52,52,1)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(179,44,27,1) 54%, rgba(209,52,52,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(179,44,27,1) 54%, rgba(209,52,52,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(179,44,27,1) 54%, rgba(209,52,52,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(179,44,27,1) 54%, rgba(209,52,52,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#d13434', GradientType=0 );
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+
+}
+
+.cd {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 200px;
+    padding: 20px;
+    margin: 10px 20px;
+    height: 400px;
+    background: black;
+    text-align: center;
+    border-radius: 20px;
+    min-width: 250px;
+    border: 1px solid rgba(179,44,27,1);
+}
+
+.cd.active {
+    display: flex;
+}
+
+.cd img {
+    max-width: 100%;
+}
+
+.cd h3 {
+    margin: 20px 0;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.cd span.author {
+    color: grey;
+    font-size: 20px;
+}
+
+.cd span.year {
+    color: grey;
+}
