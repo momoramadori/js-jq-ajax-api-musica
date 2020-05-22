@@ -70,7 +70,7 @@ main {
     text-align: center;
     border-radius: 20px;
     min-width: 250px;
-    border: 1px solid rgba(179,44,27,1);
+    border: 1px solid rgb(178, 44, 26);
 }
 
 .cd.active {
