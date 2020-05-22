@@ -21,17 +21,14 @@ $.ajax({
             $('#generi').change(function() {
                 //rendo tutti invisibili
                 $('.cd').removeClass('active');
-                // prendo ogni opzione selezionata
-                $('#generi option:selected').each(function(){
-                    //creo una variabile per salvare il genere dell'opzione selezionata
-                    var genere = $(this).attr('value');
-                    //identifico i cd che hanno lo stesso genere e li rendo visibili
-                    $('.cd[value ='+genere+']').addClass('active');
-                    //se l'utente clicca su All tutti tornano visibili
-                    if($(this).text() == 'All') {
-                        $('.cd').addClass('active')
-                    }
-                });
+                // leggo il valore della select
+                var genere = $(this).val();
+                //trovo i cd che hanno lo stesso value e li rendo visibili
+                $('.cd[value ='+genere+']').addClass('active');
+                //se il valore è all li rendo tutti visibili
+                if(genere == 'All') {
+                    $('.cd').addClass('active')
+                }
             });
             var html = template(context);
             $('main').append(html)
