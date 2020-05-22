@@ -5,8 +5,6 @@ $.ajax({
     'url': 'https://flynn.boolean.careers/exercises/api/array/music',
     'method': 'GET',
     'success': function(data) {
-        var source   = $("#template").html();
-        var template = Handlebars.compile(source);
         //utilizzo un ciclo per scorrere tutti gli oggetti dentro l'array response che è una chiave di data
         for (var i = 0; i < data.response.length; i++) {
             console.log(data.response[i]);
